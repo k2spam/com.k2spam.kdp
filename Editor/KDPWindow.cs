@@ -13,10 +13,16 @@ public class KDPWindow : EditorWindow
         KDPWindow window = GetWindow<KDPWindow>("KDP");
     }
 
+    private Texture2D LoadIcon(string name) 
+    {
+        string path = "Packages/com.k2spam/kdp/Editor/Icons/";
+        return (Texture2D)AssetDatabase.LoadAssetAtPath(path+name, typeof(Texture2D));
+    }
+
     private void OnEnable()
     {
-        icon1 = (Texture2D)AssetDatabase.LoadAssetAtPath("Assets/Icons/cube-icon.png", typeof(Texture2D));
-        icon2 = (Texture2D)AssetDatabase.LoadAssetAtPath("Assets/Icons/vfx-icon.png", typeof(Texture2D));
+        icon1 = LoadIcon("cube-icon.png");
+        icon2 = LoadIcon("vfx-icon.png");
     }
 
     private void OnGUI()
