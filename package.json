@@ -1,0 +1,19 @@
+{
+  "name": "com.k2spam.kdp",
+  "displayName": "KDP",
+  "version": "0.0.1",
+  "unity": "6000.0",
+  "description": "A set of models, effects, prefabs, and more to simplify and speed up the development process. The package contains ready-to-use elements for games.",
+  "keywords": [
+    "models",
+    "vfx"
+  ],
+  "author": {
+    "name": "Vladimir Khlebnikov",
+    "email": "k2spam2@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/k2spam/com.k2spam.kdp.git",
+    "type": "git"
+  }
+}
